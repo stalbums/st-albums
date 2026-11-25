@@ -1,0 +1,69 @@
+S&T CUSTOM ALBUMS - HOW TO UPDATE YOUR WEBSITE
+==============================================
+
+YOUR FILES vs. CLAUDE'S FILES
+-----------------------------
+Yours (Claude will never replace these without asking you first):
+  - content.js        all text, prices, covers, colors, boxes, album pages
+  - images folder     all your photos
+
+Claude's (the design and how pages work):
+  - all the .html files, styles.css, site.js
+
+When Claude sends an update, it comes as an "update" zip with only
+Claude's files. Copy them into your website folder and choose
+"Replace". Your content.js and photos stay as they are.
+If content.js ever needs a change, Claude will ask you to send
+your current content.js first and add the change to YOUR copy.
+
+
+ADDING A COVER COLOR PHOTO
+--------------------------
+1. Name the photo: cover-color.jpg, all small letters, dashes, no spaces.
+     Examples: linen-beige.jpg   suede-velvet-navy.jpg   leatherette-black.jpg
+2. Put it in the folder:  images > covers
+3. Open content.js in Notepad. Find "covers:" and add a line under
+   the right cover:
+       ["Beige", "images/covers/linen-beige.jpg"],
+   (keep the quotes and the comma)
+4. Save.
+
+To remove a color, delete its line in content.js.
+The first color in the list is the one shown first.
+
+
+ADDING A SIZE PHOTO
+-------------------
+1. Name it like:  10x10.jpg   12x12.jpg   8x8.jpg
+2. Put it in:  images > sizes
+3. In content.js, in the album's sizes line, put the photo in the
+   empty quotes:
+       ["10 × 10 inch", 0, "images/sizes/10x10.jpg"]
+   Leave "" to show the to-scale drawing instead.
+
+
+ADDING A BOX
+------------
+1. Put the photo in  images > boxes  (example: 6.jpg)
+2. In content.js under "boxes:", copy a box line and change the
+   name, text and photo.
+
+
+ADDING A PAGE TO "OUR WORK"
+---------------------------
+1. Put the spread in  images > album  (example: 6.jpg)
+2. In content.js under "albumPages:", add  "images/album/6.jpg",
+
+
+CHECK BEFORE UPLOADING
+----------------------
+Double-click index.html to open the site on your computer.
+If a photo says "Photo coming soon", the name in content.js doesn't
+match the file name exactly.
+If text disappears, a quote or comma was deleted in content.js.
+
+
+UPLOAD TO NETLIFY
+-----------------
+app.netlify.com > your site > Deploys > drag the whole website
+folder onto the box at the bottom. Wait for "Published".

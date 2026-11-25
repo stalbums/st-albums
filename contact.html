@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Contact · S&amp;T Custom Albums</title>
+<meta name="description" content="S&amp;T Custom Albums: custom photo albums for weddings, chussen, bar mitzvahs, upsherins, engagements and more.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta name="theme-color" content="#1f4e8c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="top">
+  <div class="wrap">
+    <a class="mark" href="index.html" aria-label="S&amp;T Custom Albums home"><img src="images/favicon-32.png" alt="" width="34" height="34"><span class="caps">S&amp;T Custom Albums</span></a>
+    <div class="links"><a href="index.html">Home</a><a href="packages.html">Albums &amp; Pricing</a><a href="gallery.html">Our Work</a><a href="process.html">The Process</a><a href="contact.html" aria-current="page">Contact</a></div>
+  </div>
+</nav>
+<main>
+<div class="page-head wrap"><span class="caps">Contact</span><h1 class="script">Let&#39;s get started</h1><p data-k="contactIntro"></p></div>
+<section>
+  <div class="wrap contact-grid">
+    <div class="info">
+      <div class="order" data-order hidden>
+        <span class="k">Your selection</span>
+        <div class="order-lines"></div>
+        <a class="order-edit" href="packages.html">Change selection</a>
+      </div>
+      <div class="row"><span>Phone</span><b data-k="phone"></b></div>
+      <div class="row"><span>Email</span><b data-k="email"></b></div>
+      <div class="row"><span>Occasions</span><b>Weddings · Vorts · Chussen / Baby · Bar Mitzvahs · Upsherins · and more</b></div>
+    </div>
+    <form id="inq" name="inquiry" method="POST" action="https://formsubmit.co/esty8546@gmail.com">
+      <input type="hidden" name="_subject" value="New album inquiry - S&amp;T Custom Albums">
+      <input type="hidden" name="_next" value="https://stalbums.com/thanks.html">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <p class="hp"><label>Leave empty<input name="_honey" tabindex="-1" autocomplete="off"></label></p>
+      <label for="f-name">Name<input id="f-name" name="name" required placeholder="Your name"></label>
+      <label for="f-contact">Phone or email<input id="f-contact" name="contact" required placeholder="How should we reach you?"></label>
+      <label for="f-type">Album<select id="f-type" name="album" data-album-options><option value="wedding">Wedding Albums</option><option value="engagement">Engagement Album</option><option value="chussen-baby">Chussen / Baby Album</option><option value="bar-mitzvah">Bar Mitzvah Album</option><option value="upsherin">Upsherin Album</option><option value="other">Other</option></select></label>
+      <label for="f-selection">Your selection<textarea id="f-selection" name="selection" readonly placeholder="Choose an album under Albums &amp; Pricing and your selection will show here."></textarea></label>
+      <label for="f-msg">Message<textarea id="f-msg" name="message" placeholder="Date, number of photos, anything else..."></textarea></label>
+      <button class="btn" type="submit">Send inquiry</button>
+      <p class="sent" id="sent" hidden>Thank you! We'll be in touch soon.</p>
+    </form>
+  </div>
+</section>
+<script>
+document.getElementById('inq').addEventListener('submit',function(e){
+  if(/claude|localhost/.test(location.hostname)||location.protocol==='file:'){e.preventDefault();document.getElementById('sent').hidden=false;}
+});
+</script>
+<div class="closing"><p class="script" data-k="closing"></p></div>
+</main>
+<footer>
+  <div class="wrap"><span>© 2026 S&amp;T Custom Albums · custom albums for all occasions</span><span>stalbums.com</span></div>
+</footer>
+<script src="content.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

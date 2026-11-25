@@ -12,7 +12,7 @@
 <meta name="theme-color" content="#1f4e8c">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:wght@300;400;500&display=swap">
-<link rel="stylesheet" href="styles.css?v=202611242249">
+<link rel="stylesheet" href="styles.css?v=202611242250">
 </head>
 <body>
 <nav class="top">
@@ -29,7 +29,7 @@
       <div class="order" data-order hidden>
         <span class="k">Your selection</span>
         <div class="order-lines"></div>
-        <a class="order-edit" href="packages.html">Change selection</a>
+        <div class="order-actions"><a class="order-edit" href="packages.html">Change selection</a><button type="button" class="order-clear">Remove selection</button></div>
       </div>
       <div class="row"><span>Phone</span><b data-k="phone"></b></div>
       <div class="row"><span>Email</span><b data-k="email"></b></div>
@@ -44,7 +44,7 @@
       <label for="f-name">Name<input id="f-name" name="name" required placeholder="Your name"></label>
       <label for="f-contact">Phone or email<input id="f-contact" name="contact" required placeholder="How should we reach you?"></label>
       <label for="f-type">Album<select id="f-type" name="album" data-album-options><option value="wedding">Wedding Albums</option><option value="engagement">Engagement Album</option><option value="chussen-baby">Chussen / Baby Album</option><option value="bar-mitzvah">Bar Mitzvah Album</option><option value="upsherin">Upsherin Album</option><option value="other">Other</option></select></label>
-      <label for="f-selection">Your selection<textarea id="f-selection" name="selection" readonly placeholder="Choose an album under Albums &amp; Pricing and your selection will show here."></textarea></label>
+      <label for="f-selection" id="sel-wrap" hidden>Your selection<textarea id="f-selection" name="selection" readonly placeholder="Choose an album under Albums &amp; Pricing and your selection will show here."></textarea></label>
       <label for="f-msg">Message<textarea id="f-msg" name="message" placeholder="Date, number of photos, anything else..."></textarea></label>
       <button class="btn" type="submit">Send inquiry</button>
       <p class="sent" id="sent" hidden>Thank you! We'll be in touch soon.</p>
@@ -61,7 +61,7 @@ document.getElementById('inq').addEventListener('submit',function(e){
 <footer>
   <div class="wrap"><span>© 2026 S&amp;T Custom Albums · custom albums for all occasions</span><span>stalbums.com</span></div>
 </footer>
-<script src="content.js?v=202611242249"></script>
-<script src="site.js?v=202611242249"></script>
+<script src="content.js?v=202611242250"></script>
+<script src="site.js?v=202611242250"></script>
 </body>
 </html>

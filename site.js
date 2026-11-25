@@ -283,6 +283,16 @@
     var edit = box.querySelector('.order-edit'); if (edit && d.slug) edit.href = d.slug + '.html';
     var field = document.getElementById('f-selection'); if (field) field.value = text.join('\n');
     var sel = document.getElementById('f-type'); if (sel && bySlug(d.slug)) sel.value = d.slug;
+    var wrapF = document.getElementById('sel-wrap'); if (wrapF) wrapF.hidden = false;
     box.hidden = false;
+    function clear() {
+      try { sessionStorage.removeItem('st-order'); } catch (e) {}
+      if (field) field.value = '';
+      if (wrapF) wrapF.hidden = true;
+      box.hidden = true;
+      try { history.replaceState(null, '', location.pathname + location.hash); } catch (e) {}
+    }
+    var rm = box.querySelector('.order-clear'); if (rm) rm.onclick = clear;
+    if (sel) sel.addEventListener('change', function () { if (sel.value !== d.slug) clear(); });
   });
 })();

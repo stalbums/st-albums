@@ -62,6 +62,7 @@ window.SITE = {
       options: [
         {
           name: "Master Album",
+          photo: "images/wedding.jpg",
           price: 650,
           includes: [
             { name: "Master Album", items: ["23 Spreads (46 Pages)", "10 × 10 inch", "Full design layout"] }
@@ -76,6 +77,7 @@ window.SITE = {
         },
         {
           name: "Wedding Album Package",
+          photo: "images/wedding-package.jpg",
           price: 1200,
           includes: [
             { name: "Master Album", items: ["23 Spreads (46 Pages)", "10 × 10 inch", "Full design layout"] },

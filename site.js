@@ -211,11 +211,12 @@
       col.appendChild(go);
       if (S.spreadNote) col.appendChild(el('p', 'hint', S.spreadNote));
     }
-    render(); showImg(a.photo, a.name);
+    render(); showImg(o.photo || a.photo, o.photo ? o.name : a.name);
   }
 
   function optionCard(a, o, i, onChoose) {
     var ar = el('article', 'opt');
+    if (o.photo) { var ph = el('div', 'opt-photo'), pim = new Image(); pim.src = o.photo; pim.alt = o.name; pim.loading = 'lazy'; ph.appendChild(pim); ar.appendChild(ph); }
     ar.appendChild(el('span', 'caps', 'Option ' + (i + 1)));
     ar.appendChild(el('h2', 'script', o.name));
     ar.appendChild(el('div', 'opt-price', money(o.price)));

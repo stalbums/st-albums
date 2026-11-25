@@ -270,6 +270,29 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 .toggle,.toggle span,.toggle b{text-transform:none;letter-spacing:0}
 .toggle span{font-size:.95rem;font-weight:400;color:var(--ink)}
 .toggle b{font-size:.95rem}
+
+/* restored fixes */
+.card .ph,.door .ph{aspect-ratio:3/2}
+.cfg-head h2{font-size:clamp(2.2rem,5vw,3rem)}
+.box-picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:8px}
+.toggle{text-transform:none;letter-spacing:0;font-size:.95rem;font-weight:400;color:var(--ink)}
+.info .order-lines .row{display:flex;gap:12px}
+.info .order-lines .row span{font-size:.95rem;text-transform:none;letter-spacing:0;font-weight:400;color:var(--ink)}
+.info .order-lines .row b{font-size:1rem}
+.info .order-lines .row.total b{font-size:1.4rem}
+#f-selection{min-height:150px;background:var(--card)}
+.swatches{display:flex;flex-wrap:wrap;gap:10px}
+.swatch{font:inherit;width:84px;padding:0;border:2px solid transparent;background:var(--card);cursor:pointer;display:grid;text-align:center}
+.swatch img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.swatch.noimg::before{content:"";display:block;aspect-ratio:1/1;background:var(--ivory-2)}
+.swatch span{font-size:.75rem;padding:5px 2px;color:var(--ink)}
+.swatch[aria-pressed="true"]{border-color:var(--navy)}
+.cover-base{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border:1px solid var(--navy);background:var(--card)}
+.cover-base b{font-weight:500;color:var(--navy);font-size:.85rem;text-transform:uppercase;letter-spacing:.14em}
+.back-link{font:inherit;justify-self:start;background:none;border:0;padding:0;color:var(--navy);cursor:pointer;font-size:.78rem;text-transform:uppercase;letter-spacing:.16em}
+.back-link:hover{text-decoration:underline}
+.pv-missing{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.18em}
+.opt-builder{padding-top:8px}
 .up-k{margin-top:10px}
 .tag.up{border-style:dashed}
 .book-empty{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted)}

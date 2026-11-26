@@ -195,8 +195,8 @@ window.SITE = {
     "images/album/3.jpg",
     "images/album/4.jpg",
     "images/album/5.jpg",
-    "images/album/6.jpg",
-    "images/album/7.jpg",
+    "images/album/ym-bar.jpg",
+    "images/album/kallah.jpg",
     "images/album/8.jpg"
   ],
 

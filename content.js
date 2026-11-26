@@ -52,6 +52,8 @@ window.SITE = {
   //   covers:         included covers - the customer picks one, no charge.
   //   upgradeCovers:  show only when the customer ticks "Upgrade cover"
   //                   and add the upgradedCover price.
+  //   coverPhotos: optional - a different cover photo for this album only,
+  //            e.g. { "Silk": "images/covers/silk-blue.jpg" }
   //   box:     price to add a box, or null if not offered
   albums: [
     {
@@ -166,6 +168,7 @@ window.SITE = {
           sizes: [ ["8 × 8 inch", 0, ""] ],
           covers: ["Linen", "Photo"],
           upgradeCovers: ["Suede & Velvet", "Leatherette", "Silk"],
+          coverPhotos: { "Silk": "images/covers/silk-blue.jpg" },  // this album only
           upgradedCover: 30,
           addedSpread: 15,
           box: 50,

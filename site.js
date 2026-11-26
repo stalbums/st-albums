@@ -99,6 +99,7 @@
       frame.innerHTML = svg + '</svg>'; cap.textContent = s[0] + ' album, shown to scale';
     }
     var incl = o.covers || [], ups = o.upgradeCovers || [];
+    function coverColors(name) { var ov = o.coverPhotos && o.coverPhotos[name]; return ov ? [['', ov]] : ((S.covers || {})[name]) || []; }
     function coverName() { return st.upgrade ? ups[st.cover] : incl[st.cover]; }
     function showCover() { var c = coverName(), k = coverColors(c)[st.color]; showImg(k ? k[1] : '', c + (k && k[0] ? ' · ' + k[0] : '')); }
 

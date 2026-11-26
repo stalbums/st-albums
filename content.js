@@ -196,7 +196,8 @@ window.SITE = {
     "images/album/4.jpg",
     "images/album/5.jpg",
     "images/album/6.jpg",
-    "images/album/7.jpg"
+    "images/album/7.jpg",
+    "images/album/8.jpg"
   ],
 
   // ---- The Process ----
